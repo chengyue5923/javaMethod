@@ -1,0 +1,7 @@
+模板方法模式：在一个抽象类中，有一个主方法吗，再定义1.。。。n个方法，可以也是抽象的，也可以是实际的方法，定义一个类，
+继承该抽象类，重写抽象的方法，通过抽象方法，通过调用抽象类，实现对子类的调用，
+
+执行过程：
+首先将exp和符号作为参数，调用AbstractCalculator类中的calculate(String，String)方法，在calculate(int,int)
+方法中，在从这个类中进入到子类中，执行完成后return num1+num2 后，将值返回到AbstractCalculator中，赋值给result
+打印出来，正好验证了我们的思路。
